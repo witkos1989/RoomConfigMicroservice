@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  roomconfigmicroservice:
+    image: ${DOCKER_REGISTRY-}roomconfigmicroservice
+    build:
+      context: .
+      dockerfile: RoomConfigMicroservice/Dockerfile
